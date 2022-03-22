@@ -1,10 +1,12 @@
 spring:
   redis:
-    jedis:
+    lettuce:
       pool:
-        enabled: true
-        max-idle: 8 # 最大的空闲连接
-        max-wait: 1 #
+        max-active: 32
+        max-wait: 300ms
+        max-idle: 16
+        min-idle: 8
+    database: 0
     port: 6379
     host: localhost
-    timeout: 99999
+    timeout: 5000

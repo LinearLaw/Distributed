@@ -29,7 +29,6 @@ class DistributedlockApplicationTests {
     @Test
     void contextLoads() {
         testSet();
-
     }
 
     /**
@@ -70,5 +69,7 @@ class DistributedlockApplicationTests {
             e.printStackTrace();
         }
     }
+
+
 
 }
