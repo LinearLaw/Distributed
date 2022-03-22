@@ -1,0 +1,10 @@
+spring:
+  redis:
+    jedis:
+      pool:
+        enabled: true
+        max-idle: 8 # 最大的空闲连接
+        max-wait: 1 #
+    port: 6379
+    host: localhost
+    timeout: 99999
